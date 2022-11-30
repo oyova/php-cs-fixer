@@ -1,2 +1,2 @@
 ## Coding Standards
-This project uses [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) to automatically fix PHP Coding Standards issues. Run the command `vendor/bin/php-cs-fixer fix` from the project root to fix all files configured in the finder. Run the command `vendor/bin/php-cs-fixer fix path/to/file.php` from the project root to fix a specific directory or file. You may wish to [create a bash alias](https://linuxize.com/post/how-to-create-bash-aliases) for ease of use. PHP CS Fixer should be configured in `.php-cs-fixer.php`.
+This project uses itself for fixing coding standards issues. Refer to the README for instructions.
