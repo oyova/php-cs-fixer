@@ -241,9 +241,9 @@ class Setup
         return $this->in ?: [dirname($this->configFilePath)];
     }
 
-    public function exlude($exlude): self
+    public function exclude($exclude): self
     {
-        $this->exlude = (array) $exlude;
+        $this->exclude = (array) $exclude;
 
         return $this;
     }
