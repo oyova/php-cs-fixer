@@ -1,11 +1,11 @@
 {
-    "name": "oyova/php-coding-standards",
+    "name": "oyova/php-cs-fixer",
     "description": "A wrapper for PHP CS Fixer.",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Oyova\\PhpCodingStandards\\": "src/"
+            "Oyova\\PhpCsFixer\\": "src/"
         }
     },
     "autoload-dev": {

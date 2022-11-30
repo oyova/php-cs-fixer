@@ -13,7 +13,7 @@
 		 verbose="true"
 >
 	<testsuites>
-		<testsuite name="Oyova PHP Coding Standards Test Suite">
+		<testsuite name="Oyova PHP CS Fixer Test Suite">
 			<directory suffix="Test.php">./tests</directory>
 		</testsuite>
 	</testsuites>
