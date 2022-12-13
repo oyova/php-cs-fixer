@@ -17,7 +17,9 @@ class Setup
 
     protected array $rules = [
         'array_indentation' => true,
-        'array_syntax' => ['syntax' => 'short'],
+        'array_syntax' => [
+            'syntax' => 'short',
+        ],
         'assign_null_coalescing_to_coalesce_equal' => true,
         'binary_operator_spaces' => [
             'default' => 'single_space',
@@ -71,6 +73,9 @@ class Setup
         'control_structure_continuation_position' => true,
         'declare_equal_normalize' => true,
         'declare_parentheses' => true,
+        'echo_tag_syntax' => [
+            'shorten_simple_statements_only' => false,
+        ],
         'elseif' => true,
         'empty_loop_body' => true,
         'empty_loop_condition' => true,
@@ -89,7 +94,9 @@ class Setup
         ],
         'heredoc_to_nowdoc' => true,
         'include' => true,
-        'increment_style' => ['style' => 'post'],
+        'increment_style' => [
+            'style' => 'post',
+        ],
         'indentation_type' => true,
         'integer_literal_case' => true,
         'lambda_not_used_import' => true,
@@ -169,7 +176,9 @@ class Setup
             'only_booleans' => true,
             'position' => 'end',
         ],
-        'ordered_imports' => ['sort_algorithm' => 'alpha'],
+        'ordered_imports' => [
+            'sort_algorithm' => 'alpha',
+        ],
         'psr_autoloading' => false,
         'phpdoc_indent' => true,
         'phpdoc_inline_tag_normalizer' => true,
@@ -189,7 +198,9 @@ class Setup
         'phpdoc_types' => true,
         'phpdoc_var_without_name' => true,
         'return_assignment' => true,
-        'return_type_declaration' => ['space_before' => 'none'],
+        'return_type_declaration' => [
+            'space_before' => 'none',
+        ],
         'self_accessor' => false,
         'short_scalar_cast' => true,
         'simple_to_complex_string_variable' => true,
@@ -216,12 +227,19 @@ class Setup
         'switch_continue_to_break' => true,
         'ternary_operator_spaces' => true,
         'ternary_to_null_coalescing' => true,
-        'trailing_comma_in_multiline' => ['elements' => ['arrays']],
+        'trailing_comma_in_multiline' => [
+            'elements' => ['arrays'],
+        ],
         'trim_array_spaces' => true,
         'types_spaces' => true,
         'unary_operator_spaces' => true,
         'visibility_required' => true,
         'whitespace_after_comma_in_array' => true,
+        'yoda_style' => [
+            'equal' => false,
+            'identical' => false,
+            'less_and_greater' => false,
+        ],
     ];
 
     public function __construct(string $configFilePath)
@@ -265,6 +283,11 @@ class Setup
         return array_merge($this->notName, ['*.blade.php']);
     }
 
+    protected function getRules(): array
+    {
+        return $this->rules;
+    }
+
     protected function getFinder(): Finder
     {
         return Finder::create()
@@ -283,7 +306,7 @@ class Setup
     {
         return (new Config())
             ->setFinder($this->getFinder())
-            ->setRules($this->rules)
+            ->setRules($this->getRules())
             ->setRiskyAllowed(true)
             ->setUsingCache(true);
     }
