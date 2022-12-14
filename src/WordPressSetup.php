@@ -10,6 +10,7 @@ class WordPressSetup extends Setup
     protected function rules(): array
     {
         $rules = array_merge(parent::rules(), [
+            'Oyova/space_inside_parenthesis' => true,
             'array_syntax' => [
                 'syntax' => 'long',
             ],
@@ -20,7 +21,7 @@ class WordPressSetup extends Setup
                 'allow_single_line_anonymous_class_with_empty_body' => true,
                 'allow_single_line_closure' => true,
                 'position_after_control_structures' => 'same',
-                'position_after_functions_and_oop_constructs' => 'next',
+                'position_after_functions_and_oop_constructs' => 'same',
                 'position_after_anonymous_constructs' => 'same',
             ],
             'concat_space' => [
@@ -39,7 +40,6 @@ class WordPressSetup extends Setup
             'no_spaces_around_offset' => [
                 'positions' => ['outside'],
             ],
-            'Oyova/space_inside_parenthesis' => true,
             'trim_array_spaces' => false,
             'yoda_style' => true,
         ]);
