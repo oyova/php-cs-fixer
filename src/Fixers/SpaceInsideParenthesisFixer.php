@@ -12,12 +12,9 @@ use SplFileInfo;
 
 final class SpaceInsideParenthesisFixer extends AbstractFixer
 {
-    protected $singleLineWhitespaceOptions = " \t";
+    use FixerName;
 
-    public function getName(): string
-    {
-        return'Oyova/'.parent::getName();
-    }
+    protected $singleLineWhitespaceOptions = " \t";
 
     public function getDefinition(): FixerDefinitionInterface
     {
