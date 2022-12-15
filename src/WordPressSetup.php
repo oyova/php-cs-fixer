@@ -36,6 +36,9 @@ class WordPressSetup extends Setup
                 'allow_single_line_empty_anonymous_classes' => false,
                 'allow_single_line_anonymous_functions' => false,
             ],
+            'no_alternative_syntax' => [
+                'fix_non_monolithic_code' => false,
+            ],
             'no_blank_lines_after_class_opening' => false,
             'no_spaces_around_offset' => [
                 'positions' => ['outside'],
