@@ -41,7 +41,12 @@ class WordPressSetup extends Setup
             ],
             'no_blank_lines_after_class_opening' => false,
             'no_spaces_around_offset' => [
-                'positions' => ['outside'],
+                'positions' => [
+                    'outside',
+                ],
+            ],
+            'php_unit_method_casing' => [
+                'case' => 'snake_case',
             ],
             'trim_array_spaces' => false,
             'yoda_style' => true,

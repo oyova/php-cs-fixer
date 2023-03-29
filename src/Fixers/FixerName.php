@@ -6,6 +6,6 @@ trait FixerName
 {
     public function getName(): string
     {
-        return'Oyova/'.parent::getName();
+        return 'Oyova/'.parent::getName();
     }
 }
