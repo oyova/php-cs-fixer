@@ -42,13 +42,6 @@ class Setup
                 ],
             ],
             'blank_line_between_import_groups' => true,
-            'braces' => [
-                'allow_single_line_anonymous_class_with_empty_body' => true,
-                'allow_single_line_closure' => true,
-                'position_after_control_structures' => 'same',
-                'position_after_functions_and_oop_constructs' => 'next',
-                'position_after_anonymous_constructs' => 'next',
-            ],
             'cast_spaces' => true,
             'class_attributes_separation' => [
                 'elements' => [
@@ -65,7 +58,7 @@ class Setup
             ],
             'class_reference_name_casing' => true,
             'clean_namespace' => true,
-            'compact_nullable_typehint' => true,
+            'compact_nullable_type_declaration' => true,
             'concat_space' => [
                 'spacing' => 'none',
             ],
@@ -74,7 +67,7 @@ class Setup
             ],
             'control_structure_braces' => true,
             'control_structure_continuation_position' => true,
-            'curly_braces_position' => [
+            'braces_position' => [
                 'control_structures_opening_brace' => 'same_line',
                 'functions_opening_brace' => 'next_line_unless_newline_at_signature_end',
                 'anonymous_functions_opening_brace' => 'same_line',
@@ -97,7 +90,7 @@ class Setup
             'full_opening_tag' => true,
             'fully_qualified_strict_types' => true,
             'function_declaration' => true,
-            'function_typehint_space' => true,
+            'type_declaration_spaces' => true,
             'general_phpdoc_annotation_remove' => true,
             'general_phpdoc_tag_rename' => true,
             'global_namespace_import' => [
@@ -131,8 +124,8 @@ class Setup
                 'strategy' => 'no_multi_line',
             ],
             'native_function_casing' => true,
-            'native_function_type_declaration_casing' => true,
-            'new_with_braces' => true,
+            'native_type_declaration_casing' => true,
+            'new_with_parentheses' => true,
             'no_alias_language_construct_call' => true,
             'no_alternative_syntax' => true,
             'no_binary_string' => true,
@@ -167,7 +160,7 @@ class Setup
                     'outside',
                 ],
             ],
-            'no_spaces_inside_parenthesis' => true,
+            'spaces_inside_parentheses' => true,
             'no_superfluous_elseif' => true,
             'no_superfluous_phpdoc_tags' => [
                 'remove_inheritdoc' => false,
@@ -186,7 +179,7 @@ class Setup
                     'yield',
                 ],
             ],
-            'no_unneeded_curly_braces' => true,
+            'no_unneeded_braces' => true,
             'no_unneeded_import_alias' => true,
             'no_unset_cast' => true,
             'no_unused_imports' => true,
@@ -251,7 +244,7 @@ class Setup
             'simple_to_complex_string_variable' => true,
             'simplified_if_return' => true,
             'single_blank_line_at_eof' => true,
-            'single_blank_line_before_namespace' => true,
+            'blank_lines_before_namespace' => true,
             'single_class_element_per_statement' => [
                 'elements' => [
                     'const',
@@ -267,7 +260,7 @@ class Setup
                 ],
             ],
             'single_quote' => true,
-            'single_space_after_construct' => true,
+            'single_space_around_construct' => true,
             'single_trait_insert_per_statement' => true,
             'space_after_semicolon' => true,
             'standardize_increment' => true,
@@ -286,7 +279,7 @@ class Setup
             'trim_array_spaces' => true,
             'types_spaces' => true,
             'unary_operator_spaces' => true,
-            'visibility_required' => true,
+            'modifier_keywords' => true,
             'whitespace_after_comma_in_array' => true,
             'yoda_style' => [
                 'equal' => false,

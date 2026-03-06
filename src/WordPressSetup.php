@@ -17,17 +17,10 @@ class WordPressSetup extends Setup
             'binary_operator_spaces' => [
                 'default' => 'align_single_space_minimal',
             ],
-            'braces' => [
-                'allow_single_line_anonymous_class_with_empty_body' => true,
-                'allow_single_line_closure' => true,
-                'position_after_control_structures' => 'same',
-                'position_after_functions_and_oop_constructs' => 'same',
-                'position_after_anonymous_constructs' => 'same',
-            ],
             'concat_space' => [
                 'spacing' => 'one',
             ],
-            'curly_braces_position' => [
+            'braces_position' => [
                 'control_structures_opening_brace' => 'same_line',
                 'functions_opening_brace' => 'same_line',
                 'anonymous_functions_opening_brace' => 'same_line',

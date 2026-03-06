@@ -9,11 +9,11 @@
         }
     },
     "require": {
-        "php": ">=7.4 <8.5",
-        "friendsofphp/php-cs-fixer": "^3.14"
+        "php": ">=7.4 <8.6",
+        "friendsofphp/php-cs-fixer": "^3.75"
     },
     "require-dev": {
-        "symfony/var-dumper": "^5.4"
+        "symfony/var-dumper": "^5.4 || ^6.0 || ^7.0"
     },
     "config": {
         "optimize-autoloader": true,
